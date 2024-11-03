@@ -5,86 +5,42 @@ examples/
 
 # Development and testing files
 /test
+/test_config/
+/test_modules/
+/test_resources/
+dev/
+e2e/
 .github/
-.gitignore
-.git/
+.vscode/
+.devcontainer/
+.storybook/
+.shadow-cljs/
+hooks/
 
-# Local environment files (usually not needed in production)
+# Local environment files
 .env
 .env.local
 
-# Ignore unnecessary build artifacts and dependencies
+# Ignore unnecessary build artifacts and caches
 dist/
 tmp/
-node_modules/
-
-# Exclude any other large files or folders you find are not necessary
-
-*.psd
-*.pdf
-/test
-*.md
-docs/
-examples/
-.github/
-node_modules/  # If not required for production (only for local dev dependencies)
-
-
-# Development and test directories
-test/
-test_config/
-test_modules/
-test_resources/
-dev/
-e2e/
-hooks/
-
-# Documentation and examples
-docs/
-examples/
-
-# Configuration files (specific to development environment)
-.vscode/
-.devcontainer/
-.github/
-.storybook/
-.shadow-cljs/
-
-# Caches and logs
+node_modules/  # Only if your deployment doesn’t rely on this (e.g., included during build)
 .babel_cache/
 .cp_cache/
 .loki/
 .lsp/
-node_modules/  # Only if your deployment doesn't rely on this (e.g., if it's included during build)
-target/
 
 # Unnecessary tools and configs
 .husky/
+.editorconfig
 .eslintignore
 .eslintrc.js
-.editorconfig
 .mlc_config.json
 .nvmrc
 .dir-locals.el
 .clj-kondo/
-
-# Other unnecessary files for production
-*.md
-*.psd
-*.pdf
-
-# Specific files for local development or pre-commit checks
 pre-commit-config.yaml
 
-
+# Other large or unnecessary files for production
 *.psd
 *.pdf
-/test
-/docs
-/.git
-/.husky
-/.storybook
-/.vscode
-/test_config
-/test_resources
-/node_modules
