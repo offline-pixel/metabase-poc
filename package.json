@@ -6,8 +6,8 @@
   "repository": "https://github.com/metabase/metabase",
   "license": "private",
   "engines": {
-    "node": ">=18",
-    "yarn": "^1.12.3"
+    "node": "18.x",
+    "yarn": "^1.22.22"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.0.8",

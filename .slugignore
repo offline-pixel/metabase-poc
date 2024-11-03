@@ -1,0 +1,90 @@
+# Documentation and examples
+*.md
+docs/
+examples/
+
+# Development and testing files
+/test
+.github/
+.gitignore
+.git/
+
+# Local environment files (usually not needed in production)
+.env
+.env.local
+
+# Ignore unnecessary build artifacts and dependencies
+dist/
+tmp/
+node_modules/
+
+# Exclude any other large files or folders you find are not necessary
+
+*.psd
+*.pdf
+/test
+*.md
+docs/
+examples/
+.github/
+node_modules/  # If not required for production (only for local dev dependencies)
+
+
+# Development and test directories
+test/
+test_config/
+test_modules/
+test_resources/
+dev/
+e2e/
+hooks/
+
+# Documentation and examples
+docs/
+examples/
+
+# Configuration files (specific to development environment)
+.vscode/
+.devcontainer/
+.github/
+.storybook/
+.shadow-cljs/
+
+# Caches and logs
+.babel_cache/
+.cp_cache/
+.loki/
+.lsp/
+node_modules/  # Only if your deployment doesn't rely on this (e.g., if it's included during build)
+target/
+
+# Unnecessary tools and configs
+.husky/
+.eslintignore
+.eslintrc.js
+.editorconfig
+.mlc_config.json
+.nvmrc
+.dir-locals.el
+.clj-kondo/
+
+# Other unnecessary files for production
+*.md
+*.psd
+*.pdf
+
+# Specific files for local development or pre-commit checks
+pre-commit-config.yaml
+
+
+*.psd
+*.pdf
+/test
+/docs
+/.git
+/.husky
+/.storybook
+/.vscode
+/test_config
+/test_resources
+/node_modules
